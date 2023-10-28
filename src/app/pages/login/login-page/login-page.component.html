@@ -1,0 +1,76 @@
+<div class="login-page">
+    <div class="panel" id="form-box">
+        <form>
+            <img src="assets/logo.png" id="logo" />
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <fa-icon [icon]="faUser"></fa-icon>
+                </span>
+                <input
+                  required
+                  email
+                  type="text"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  aria-label="email"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                  <fa-icon [icon]="faLock"></fa-icon>
+              </span>
+                <input
+                  required
+                  minlength="6"
+                  maxlength="40"
+                  type="password"
+                  name="senha"
+                  class="form-control"
+                  placeholder="Password"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  
+                  type="submit"
+                  
+                  value="Entrar"
+                  class="btn btn-success form-control"
+                />
+                <button class="btn form-control register" routerLink="/register">
+                  Registrar
+                </button>
+              </div>
+        
+              <div class="icons mb-2">
+                <a href="https://github.com/henriquesan14" target="_blank"
+                  >
+                  <fa-icon class="me-1" [icon]="faGithub" [styles]="stylesIcon"></fa-icon>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/henrique-santos-30a382152/"
+                  target="_blank"
+                  ><fa-icon [icon]="faLinkedinIn" [styles]="stylesIcon"></fa-icon></a>
+                <!-- <app-loading [loader]="loaderLogin"></app-loading> -->
+              </div>
+        
+              <div class="doc">
+                <a
+                  href="https://github.com/henriquesan14/sistema-restaurante"
+                  target="_blank"
+                  ><fa-icon class="me-1" [icon]="faQuestion"></fa-icon>Leia a documentação</a
+                >
+              </div>
+              <div class="mt-2">
+                <h6>Clique no botão para logar como:</h6>
+                <button  class="btn btn-danger btn-sm me-1">ADMIN</button>
+                <button class="btn btn-primary btn-sm me-1">GARÇOM</button>
+                <button  class="btn btn-dark btn-sm">CLIENTE</button>
+              </div>
+        </form>
+    </div>
+</div>
